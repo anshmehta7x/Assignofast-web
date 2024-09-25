@@ -1,8 +1,17 @@
 import Image from "next/image";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  display: "swap",
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 export default function What() {
   return (
-    <section className="bg-background max-w-screen h-screen flex flex-col md:flex-row md:justify-evenly">
+    <section
+      className={`bg-background max-w-screen h-screen flex flex-col md:flex-row md:justify-evenly ${poppins.className}`}
+    >
       <div className="w-1/2 border-borderGreen border-r-2 border-t-2 border-b-2 hidden md:flex justify-center items-center">
         <Image src="laptop.svg" alt="laptop" width={650} height={650} />
       </div>
