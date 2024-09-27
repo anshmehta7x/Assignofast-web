@@ -1,9 +1,17 @@
 import Image from "next/image";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  display: "swap",
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
 export default function Features() {
   return (
     <>
-      <div className="bg-[#00262D] h-screen p-4 text-center">
-        <h1 className="text-[#CFEC9F] text-6xl mt-8">
+      <div className={`bg-[#00262D] h-screen p-4 text-center ${poppins.className}`}>
+        <h1 className="text-[#CFEC9F] text-6xl mt-8 font-semibold">
           FEATURES OF ASSIGNOFAST
         </h1>
         <div className="h-[70vh] flex mt-16 justify-evenly m-8">
@@ -15,7 +23,7 @@ export default function Features() {
               width={500}
             />
           </div>
-          <div className="flex flex-row h-[100%] items-center">
+          {/* <div className="flex flex-row h-[100%] items-center">
             <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#9AFC4F] rounded rounded-2xl hover:z-30 left-[9rem] p-4">
               DEADLINES
             </div>
@@ -25,7 +33,22 @@ export default function Features() {
             <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#CBFF83] rounded rounded-2xl  top-[3rem] right-[10rem] hover:z-20 p-4">
               NOTIFICATION
             </div>
-          </div>
+          </div> */}
+<div className="grid grid-cols-2 gap-4 h-[100%] items-center">
+  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#9AFC4F] rounded rounded-2xl p-4">
+    DEADLINES
+  </div>
+  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#CBFF83] rounded rounded-2xl p-4">
+    CUSTOMIZATIONS
+  </div>
+  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#D0FC4E] rounded rounded-2xl p-4">
+    TASKS
+  </div>
+  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#CBFF83] rounded rounded-2xl p-4">
+    NOTIFICATIONS
+  </div>
+</div>
+
         </div>
       </div>
     </>

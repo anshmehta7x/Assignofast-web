@@ -21,7 +21,7 @@ export default function What() {
             WHAT'S <span className="hidden md:inline-block">{"\n"}</span>
             <span className="text-[#E9FAC1]">ASSIGNOFAST ?</span>
           </h1>
-          <p className="text-sm md:text-2xl uppercase text-justify md:text-left leading-6">
+          <p className="text-sm md:text-2xl uppercase text-justify md:text-left leading-6 text-white">
             <span className="text-lightGreen">Assignofast</span> is more than
             just a regular reminder app. It taps into the digital world of
             assignments posted by your faculty, automatically loading them into
