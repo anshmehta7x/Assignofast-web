@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Landing() {
   return (
-    <div className="h-[100vh] w-[100vw] bg-[#01171C] lg:flex overflow-hidden relative">
+    <div className="h-[100%] w-[100%] bg-[#01171C] lg:flex overflow-hidden relative">
       <Image
         src="landing-overlay.svg"
         alt="Overlay Image"
