@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 
@@ -10,45 +11,62 @@ const poppins = Poppins({
 export default function Features() {
   return (
     <>
-      <div className={`bg-[#00262D] h-screen p-4 text-center ${poppins.className}`}>
-        <h1 className="text-[#CFEC9F] text-6xl mt-8 font-semibold">
+      <div className={`bg-[#00262D] h-auto mb-2 p-4 text-center ${poppins.className}`}>
+        <h1 className="text-[#CFEC9F] text-4xl md:text-5xl lg:text-6xl mt-8 font-semibold">
           FEATURES OF ASSIGNOFAST
         </h1>
-        <div className="h-[70vh] flex mt-16 justify-evenly m-8">
+        
+        {/* Laptop + Tablet view */}
+        <div className="hidden md:flex h-[70vh] justify-evenly mt-16 m-8">
           <div className="flex items-center">
             <Image
               src="./phone.svg"
               alt="phone img"
               height={1200}
-              width={500}
+              width={400}
+              className="hidden lg:block"  // Hide image on tablet, show on larger screens
             />
           </div>
-          {/* <div className="flex flex-row h-[100%] items-center">
-            <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#9AFC4F] rounded rounded-2xl hover:z-30 left-[9rem] p-4">
-              DEADLINES
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-4 h-[100%] items-center">
+            {[
+              { title: "DEADLINES", content: "Track and meet all important deadlines." },
+              { title: "CUSTOMIZATIONS", content: "Customize your tasks and projects." },
+              { title: "TASKS", content: "Easily manage and track your tasks." },
+              { title: "NOTIFICATIONS", content: "Get notified about important updates." }
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className={`relative text-black p-4 h-[15rem] md:h-[18rem] w-[15rem] md:w-[18rem] bg-[#9AFC4F] rounded-2xl`}
+                style={{
+                  backgroundColor: index % 2 === 0 ? "#9AFC4F" : "#CBFF83",
+                }}
+              >
+                <h2 className="text-2xl md:text-xl lg:text-2xl font-semibold">{feature.title}</h2>
+                <p className="text-lg md:text-base lg:text-lg mt-2">{feature.content}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Mobile view */}
+        <div className="md:hidden flex flex-col items-center mt-10 space-y-4">
+          {[
+            { title: "DEADLINES", content: "Track and meet all important deadlines." },
+            { title: "CUSTOMIZATIONS", content: "Customize your tasks and projects." },
+            { title: "TASKS", content: "Easily manage and track your tasks." },
+            { title: "NOTIFICATIONS", content: "Get notified about important updates." }
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className={`relative text-black p-4 h-[12rem] w-[20rem] bg-[#9AFC4F] rounded-2xl`}
+              style={{
+                backgroundColor: index % 2 === 0 ? "#9AFC4F" : "#CBFF83",
+              }}
+            >
+              <h2 className="text-xl font-semibold">{feature.title}</h2>
+              <p className="text-sm mt-2">{feature.content}</p>
             </div>
-            <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#D0FC4E] rounded rounded-2xl bottom-[2rem] z-20 p-4">
-              TASKS
-            </div>
-            <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#CBFF83] rounded rounded-2xl  top-[3rem] right-[10rem] hover:z-20 p-4">
-              NOTIFICATION
-            </div>
-          </div> */}
-<div className="grid grid-cols-2 gap-4 h-[100%] items-center">
-  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#9AFC4F] rounded rounded-2xl p-4">
-    DEADLINES
-  </div>
-  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#CBFF83] rounded rounded-2xl p-4">
-    CUSTOMIZATIONS
-  </div>
-  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#D0FC4E] rounded rounded-2xl p-4">
-    TASKS
-  </div>
-  <div className="relative text-black text-3xl h-[18rem] w-[18rem] bg-[#CBFF83] rounded rounded-2xl p-4">
-    NOTIFICATIONS
-  </div>
-</div>
-
+          ))}
         </div>
       </div>
     </>

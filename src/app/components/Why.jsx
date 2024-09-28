@@ -5,7 +5,7 @@ const poppins = Poppins({
   display: "swap",
   weight: ["400", "600", "700"],
   subsets: ["latin"],
-});
+}); 
 
 export default function Why() {
   return (
