@@ -5,16 +5,18 @@ import Features from "./components/Features";
 import Why from "./components/Why";
 import Navbar from "./components/Navbar";
 import Faqs from "./components/Faqs";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar /> 
       <Landing />
       <What />
       <Features />
       <Why/>
       <Faqs/>
+      <Footer />
     </>
   );
 }
