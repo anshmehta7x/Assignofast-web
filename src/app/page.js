@@ -4,15 +4,17 @@ import What from "./components/What";
 import Features from "./components/Features";
 import Why from "./components/Why";
 import Navbar from "./components/Navbar";
+import Faqs from "./components/Faqs";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Landing />
       <What />
       <Features />
       <Why/>
+      <Faqs/>
     </>
   );
 }

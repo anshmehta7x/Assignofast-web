@@ -10,9 +10,10 @@ const poppins = Poppins({
 export default function Why() {
   return (
     <>
-      <div className={`${poppins.className}`}>
+      <div className={`${poppins.className} overflow-clip md:h-[160vh] lg:h-[240vh]`}>
+      {/* <div className={`${poppins.className} overflow-clip`} style={{ height: "calc(9vh * 2.4)" }}> */}
         {/* Desktop and Tablet view */}
-        <div className="hidden md:flex flex-col lg:h-[80vh] md:h-auto">
+        <div className="hidden md:flex flex-col">
           <h1 className="text-white lg:text-6xl md:text-4xl ml-8 mt-[8rem] font-extrabold">
             Why Choose Assignofast?
           </h1>

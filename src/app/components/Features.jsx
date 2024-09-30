@@ -23,7 +23,7 @@ export default function Features() {
               src="./phone.svg"
               alt="phone img"
               height={1200}
-              width={400}
+              width={500}
               className="hidden lg:block"  // Hide image on tablet, show on larger screens
             />
           </div>
