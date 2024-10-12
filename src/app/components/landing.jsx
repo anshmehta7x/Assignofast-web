@@ -10,7 +10,7 @@ export default function Landing() {
         width={100}
         height={100}
       />
-      <div className="text-[3vh] lg:text-[8vh] relative z-10 w-[100vw] h-[38vh] lg:h-full lg:w-[45vw] mt-[10vh] lg:mt-[20vh] ml-[10vw]">
+      <div className="text-[3vh] lg:text-[8vh] relative z-10 w-[100vw] h-[38vh] lg:h-full lg:w-[45vw] mt-[10vh] lg:mt-[20vh] ml-[10vw] text-white">
           <p>
             Automate <span className="opacity-50">Tracking</span>
           </p>
@@ -24,7 +24,7 @@ export default function Landing() {
           </p>
           <button className="bg-[#b8f80c] mt-[3vh] lg:mt-[5vh] text-black p-2 lg:p-4 text-[1.5vh] lg:text-[3vh]">
             <span className="block lg:hidden">Get the App Now!</span>
-            <span className="hidden lg:block">Get the Extension Now!</span>
+            <span className="hidden lg:block">Coming very soon!</span>
             </button>
         </div>
       
