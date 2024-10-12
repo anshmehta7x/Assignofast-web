@@ -2,6 +2,12 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
+import { Alexandria } from "next/font/google";
+
+const alexandria = Alexandria({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +17,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed flex items-center justify-between bg-transparent h-[8vh] md:h-[10vh] px-2 md:px-10 w-full z-[1000]">
+        <nav className={`fixed flex items-center justify-between bg-transparent h-[8vh] md:h-[10vh] px-2 md:px-10 w-full z-[1000] ${alexandria.className} `}>
             <div className="flex flex-row gap-4 items-center">
                 <Link href="/">
                     <Image
@@ -57,7 +63,7 @@ export default function Navbar() {
             </div>
 
             {isMenuOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center font-bold font-pixeboy z-[1001]">
+                <div className="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center font-bold z-[1001]">
                     <button className="absolute top-5 right-5" onClick={toggleMenu}>
                         <Image
                             src="cross-icon.svg"

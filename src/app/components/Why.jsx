@@ -1,23 +1,27 @@
 import Image from "next/image";
-import { Poppins } from "next/font/google";
+import { Abyssinica_SIL, Alexandria } from "next/font/google";
 
-const poppins = Poppins({
-  display: "swap",
-  weight: ["400", "600", "700"],
-  subsets: ["latin"],
-}); 
+const abyssinica = Abyssinica_SIL({
+  weight: '400',
+  subsets: ['latin'],
+});
+
+const alexandria = Alexandria({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export default function Why() {
   return (
     <>
-      <div className={`${poppins.className} overflow-clip md:h-[160vh] lg:h-[240vh]`}>
+      <div className={`${alexandria.className} overflow-clip md:h-[160vh] lg:h-[240vh]`}>
       {/* <div className={`${poppins.className} overflow-clip`} style={{ height: "calc(9vh * 2.4)" }}> */}
         {/* Desktop and Tablet view */}
         <div className="hidden md:flex flex-col">
           <h1 className="text-white lg:text-6xl md:text-4xl ml-8 mt-[8rem] font-extrabold">
             Why Choose Assignofast?
           </h1>
-          <h1 className="text-red-600 lg:text-xl md:text-lg m-8 mt-4 font-semibold">
+          <h1 className={`text-red-600 lg:text-xl md:text-lg m-8 mt-4 font-semibold ${abyssinica.className}`}>
             ADVANTAGES
           </h1>
 
@@ -33,7 +37,7 @@ export default function Why() {
                 />
                 <h2 className="lg:text-2xl md:text-xl m-1">Clever Notifications</h2>
               </div>
-              <p className="text-sm md:text-base">
+              <p className={`text-sm md:text-base ${abyssinica.className}`}>
                 Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
                 ultricies. In ultrices malesuada elit mauris etiam odio. Duis
                 tristique lacus, et blandit viverra nisl velit. Sed mattis
@@ -73,7 +77,7 @@ export default function Why() {
                 />
                 <h2 className="lg:text-2xl md:text-xl m-1">Track Your Digital Assessments</h2>
               </div>
-              <p className="text-sm md:text-base">
+              <p className={`text-sm md:text-base ${abyssinica.className}`}>
                 Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
                 ultricies. In ultrices malesuada elit mauris etiam odio. Duis
                 tristique lacus, et blandit viverra nisl velit. Sed mattis
@@ -95,7 +99,7 @@ export default function Why() {
                 />
                 <h2 className="lg:text-2xl md:text-xl m-1">Personal Task Management</h2>
               </div>
-              <p className="text-sm md:text-base">
+              <p className={`text-sm md:text-base ${abyssinica.className}`}>
                 Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
                 ultricies. In ultrices malesuada elit mauris etiam odio. Duis
                 tristique lacus, et blandit viverra nisl velit. Sed mattis
@@ -116,7 +120,7 @@ export default function Why() {
         </div>
 
         {/* Mobile view */}
-        <div className="md:hidden flex flex-col h-auto">
+        <div className={`md:hidden flex flex-col h-auto ${alexandria.className}`}>
           <h1 className="text-white text-3xl text-center mt-4 font-extrabold">
             Why Choose Assignofast?
           </h1>
@@ -136,7 +140,7 @@ export default function Why() {
                 />
                 <h2 className="text-xl text-white font-semibold">Clever Notifications</h2>
               </div>
-              <p className="text-white text-center">
+              <p className={`text-white text-center ${abyssinica.className}`}>
                 Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
                 ultricies. In ultrices malesuada elit mauris etiam odio. Duis
                 tristique lacus, et blandit viverra nisl velit. Sed mattis
@@ -162,7 +166,7 @@ export default function Why() {
                 />
                 <h2 className="text-xl text-white">Track Your Digital Assessments</h2>
               </div>
-              <p className="text-white text-center">
+              <p className={`text-white text-center ${abyssinica.className}`}>
                 Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
                 ultricies. In ultrices malesuada elit mauris etiam odio. Duis
                 tristique lacus, et blandit viverra nisl velit. Sed mattis
@@ -188,7 +192,7 @@ export default function Why() {
                 />
                 <h2 className="text-xl text-white">Personal Task Management</h2>
               </div>
-              <p className="text-white text-center">
+              <p className={`text-white text-center ${abyssinica.className}`}>
                 Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
                 ultricies. In ultrices malesuada elit mauris etiam odio. Duis
                 tristique lacus, et blandit viverra nisl velit. Sed mattis

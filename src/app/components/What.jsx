@@ -1,16 +1,21 @@
 import Image from "next/image";
-import { Poppins } from "next/font/google";
+import { Abyssinica_SIL, Alexandria } from "next/font/google";
 
-const poppins = Poppins({
-  display: "swap",
-  weight: ["400", "700"],
-  subsets: ["latin"],
+
+const abyssinica = Abyssinica_SIL({
+  weight: '400',
+  subsets: ['latin'],
+});
+
+const alexandria = Alexandria({
+  weight: '400',
+  subsets: ['latin'],
 });
 
 export default function What() {
   return (
     <section
-      className={`bg-background max-w-screen h-screen flex flex-col md:flex-row md:justify-evenly ${poppins.className}`}
+      className={`bg-background max-w-screen h-screen flex flex-col md:flex-row md:justify-evenly ${alexandria.className}`}
     >
       <div className="w-1/2 border-borderGreen border-r-2 border-t-2 border-b-2 hidden md:flex justify-center items-center">
         <Image src="laptop.svg" alt="laptop" width={650} height={650} />
@@ -21,8 +26,8 @@ export default function What() {
             WHAT'S <span className="hidden md:inline-block">{"\n"}</span>
             <span className="text-[#E9FAC1]">ASSIGNOFAST ?</span>
           </h1>
-          <p className="text-sm md:text-2xl uppercase text-justify md:text-left leading-6 text-white">
-            <span className="text-lightGreen">Assignofast</span> is more than
+          <p className={`text-sm md:text-2xl uppercase text-justify md:text-left leading-6 ${abyssinica.className} text-white`}>
+            <span className={`text-lightGreen`}>Assignofast</span> is more than
             just a regular reminder app. It taps into the digital world of
             assignments posted by your faculty, automatically loading them into
             the app so you don't have to worry about missing anything. You'll

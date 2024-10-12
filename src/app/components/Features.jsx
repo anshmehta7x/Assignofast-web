@@ -1,17 +1,21 @@
 'use client';
 import Image from "next/image";
-import { Poppins } from "next/font/google";
+import { Abyssinica_SIL, Alexandria } from "next/font/google";
 
-const poppins = Poppins({
-  display: "swap",
-  weight: ["400", "700"],
-  subsets: ["latin"],
+const abyssinica = Abyssinica_SIL({
+  weight: '400',
+  subsets: ['latin'],
+});
+
+const alexandria = Alexandria({
+  weight: '400',
+  subsets: ['latin'],
 });
 
 export default function Features() {
   return (
     <>
-      <div className={`bg-[#00262D] h-auto mb-2 p-4 text-center ${poppins.className}`}>
+      <div className={`bg-[#00262D] h-auto mb-2 p-4 text-center `}>
         <h1 className="text-[#CFEC9F] text-4xl md:text-5xl lg:text-6xl mt-8 font-semibold">
           FEATURES OF ASSIGNOFAST
         </h1>
@@ -41,8 +45,8 @@ export default function Features() {
                   backgroundColor: index % 2 === 0 ? "#9AFC4F" : "#CBFF83",
                 }}
               >
-                <h2 className="text-2xl md:text-xl lg:text-2xl font-semibold">{feature.title}</h2>
-                <p className="text-lg md:text-base lg:text-lg mt-2">{feature.content}</p>
+                <h2 className={`text-2xl md:text-xl lg:text-2xl font-semibold ${alexandria.className}`}>{feature.title}</h2>
+                <p className={`text-lg md:text-base lg:text-lg mt-2 ${abyssinica.className}`}>{feature.content}</p>
               </div>
             ))}
           </div>

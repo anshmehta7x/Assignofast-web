@@ -1,8 +1,14 @@
 import Image from "next/image";
+import { Alexandria } from "next/font/google";
+
+const alexandria = Alexandria({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export default function Landing() {
   return (
-    <div className="h-[100%] w-[100%] bg-[#01171C] lg:flex overflow-hidden relative">
+    <div className={`h-[100%] w-[100%] bg-[#01171C] lg:flex overflow-hidden relative font-alexandria ${alexandria.className}`}>
       <Image
         src="landing-overlay.svg"
         alt="Overlay Image"
@@ -22,9 +28,9 @@ export default function Landing() {
             Assignofast - a smart companion designed to ease the stress of
             keeping track of your tasks and assignments.
           </p>
-          <button className="bg-[#b8f80c] mt-[3vh] lg:mt-[5vh] text-black p-2 lg:p-4 text-[1.5vh] lg:text-[3vh]">
-            <span className="block lg:hidden">Get the App Now!</span>
-            <span className="hidden lg:block">Get the Extension Now!</span>
+          <button className="bg-[#b8f80c] mt-[3vh] lg:mt-[5vh] text-black p-2 lg:p-4 text-[1.5vh] lg:text-[3vh] ">
+            <span className="block lg:hidden ">Coming Very Soon !!</span>
+            <span className="hidden lg:block ">Coming Very Soon !!</span>
             </button>
         </div>
       
