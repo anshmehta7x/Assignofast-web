@@ -16,7 +16,7 @@ export default function Landing() {
         width={100}
         height={100}
       />
-      <div className="text-[3vh] lg:text-[8vh] relative z-10 w-[100vw] h-[38vh] lg:h-full lg:w-[45vw] mt-[10vh] lg:mt-[20vh] ml-[10vw]">
+      <div className="text-[3vh] lg:text-[8vh] relative z-10 w-[100vw] h-[38vh] lg:h-full lg:w-[45vw] mt-[10vh] lg:mt-[20vh] ml-[10vw] text-white">
           <p>
             Automate <span className="opacity-50">Tracking</span>
           </p>

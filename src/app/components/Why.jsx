@@ -18,22 +18,22 @@ export default function Why() {
       {/* <div className={`${poppins.className} overflow-clip`} style={{ height: "calc(9vh * 2.4)" }}> */}
         {/* Desktop and Tablet view */}
         <div className="hidden md:flex flex-col">
-          <h1 className="text-white lg:text-6xl md:text-4xl ml-8 mt-[8rem] font-extrabold">
-            Why Choose Assignofast?
+          <h1 className="text-[#e9fac1] lg:text-7xl md:text-4xl ml-8 mt-[8rem] font-extrabold">
+            <span className="text-[#c3ff55]">Why Choose</span> Assignofast?
           </h1>
-          <h1 className={`text-red-600 lg:text-xl md:text-lg m-8 mt-4 font-semibold ${abyssinica.className}`}>
+          <h1 className={`text-[#c3ff55] lg:text-xl md:text-lg m-8 mt-4 font-semibold ${abyssinica.className}`}>
             ADVANTAGES
           </h1>
 
-          <div className="relative flex p-12 justify-between lg:bottom-56 md:bottom-24">
-            <div className="text-white lg:w-[40%] md:w-[45%] flex flex-col justify-center">
+          <div className="relative flex p-12 justify-between h-[80vh]">
+            <div className="text-white lg:w-[40%] md:w-[45%] flex flex-col justify-center ">
               <div className="flex mb-2 items-center">
                 <Image
                   src="./notifications.svg"
                   alt="notification icon"
                   height={1200}
                   width={30}
-                  className="m-1"
+                  className="m-1 "
                 />
                 <h2 className="lg:text-2xl md:text-xl m-1">Clever Notifications</h2>
               </div>
@@ -56,7 +56,7 @@ export default function Why() {
             </div>
           </div>
 
-          <div className="relative flex p-8 justify-between lg:bottom-[30rem] md:bottom-[18rem]">
+          <div className="relative flex p-8 justify-between h-[50vh]">
             <div className="flex items-center lg:w-[50%] md:w-[45%]">
               <Image
                 src="./why2.svg"
@@ -87,7 +87,7 @@ export default function Why() {
             </div>
           </div>
 
-          <div className="relative flex p-12 justify-between lg:bottom-[45rem] md:bottom-[30rem]">
+          <div className="relative flex p-12 justify-between">
             <div className="text-white lg:w-[40%] md:w-[45%] flex flex-col justify-center">
               <div className="flex">
                 <Image
@@ -116,8 +116,14 @@ export default function Why() {
                 className="object-contain"
               />
             </div>
+
+            
+
           </div>
+
         </div>
+
+        
 
         {/* Mobile view */}
         <div className={`md:hidden flex flex-col h-auto ${alexandria.className}`}>
