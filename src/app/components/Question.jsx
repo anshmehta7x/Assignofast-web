@@ -15,7 +15,7 @@ export default function Question({ bgColor }) {
     <div className={`relative h-auto md:h-[12rem] w-full md:w-[42rem] m-2 p-4 rounded-lg ${abyssinica.className}`}>
       <div
         className="absolute inset-0 rounded-lg"
-        style={{ backgroundColor: bgColor, opacity: 0.5 }}
+        style={{ backgroundColor: bgColor, opacity: 0.35 }}
       />
       
       <div className="relative text-white z-10">
