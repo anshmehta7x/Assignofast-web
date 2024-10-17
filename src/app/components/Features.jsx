@@ -29,7 +29,7 @@ export default function Features() {
         </h1>
 
         {/* Laptop + Tablet view */}
-        <div className="hidden md:flex h-[70vh] justify-evenly mt-16 m-8">
+        <div className="hidden md:flex h-[100vh] justify-evenly mt-16 m-8">
           <div className="flex items-center">
             <Image
               src="./phone.svg"
