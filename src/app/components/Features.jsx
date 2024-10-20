@@ -12,69 +12,38 @@ const alexandria = Alexandria({
   subsets: ['latin'],
 });
 
-// Features data array
 const featuresData = [
-  { title: "DEADLINES", content: "Track and meet all important deadlines." },
-  { title: "CUSTOMIZATIONS", content: "Customize your tasks and projects." },
-  { title: "TASKS", content: "Easily manage and track your tasks." },
-  { title: "NOTIFICATIONS", content: "Get notified about important updates." }
+  { icon: "./feat1.svg", title: "Real-Time Tracking", content: "Track your DA's progress in real-time." },
+  { icon: "./feat2.svg", title: "Customised Tasks", content: "Safe and seamless remainder options." },
+  { icon: "./feat3.svg", title: "Auto Sync with VTOP", content: "Choose your semester for your convenience." },
+  { icon: "./feat4.svg", title: "Auto Sync with VTOP", content: "Choose your semester for your convenience." }
 ];
 
 export default function Features() {
   return (
-    <>
-      <div className={`bg-[#00262D] h-auto mb-2 p-4 text-center ${alexandria.className}`}>
-        <h1 className="text-[#e9fac1] text-4xl md:text-5xl lg:text-6xl mt-8 font-semibold">
-          FEATURES OF ASSIGNOFAST
-        </h1>
-
-        {/* Laptop + Tablet view */}
-        <div className="hidden md:flex h-[100vh] justify-evenly mt-16 m-8">
-          <div className="flex items-center">
-            <Image
+    <div className="bg-black h-auto p-4 font-sans">
+      <div className="flex h-full flex-col md:flex-row">
+        <div className="flex justify-center items-center w-full md:w-1/2 mb-8 md:mb-0">
+          <div className="relative w-full max-w-[300px] md:max-w-none">
+            <img
               src="./phone.svg"
               alt="phone img"
-              height={1200}
-              width={500}
-              className="hidden lg:block"  // Hide image on tablet, show on larger screens
+              className="w-full h-auto object-contain"
             />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-4 h-[100%] items-center">
+        </div>
+        <div className="flex flex-col justify-center text-white w-full md:w-1/2">
+          <div className="grid grid-cols-2 gap-4 md:gap-8">
             {featuresData.map((feature, index) => (
-              <div
-                key={index}
-                className={`relative text-white p-4 h-[15rem] md:h-[18rem] w-[15rem] md:w-[18rem] rounded-2xl`}
-                style={{
-                  backgroundColor: 
-                    (index === 0 || index === 3) ? "rgba(66, 102, 29, 0.2)" : "rgba(36, 203, 27, 0.2)", // Diagonal coloring
-                  border: 
-                    (index === 0 || index === 3) ? "0.2rem solid #42661D" : "0.2rem solid #24CB1B", // Matching border
-                }}
-              >
-                <h2 className={`text-2xl md:text-xl lg:text-2xl font-semibold ${alexandria.className}`}>{feature.title}</h2>
-                <p className={`text-lg md:text-base lg:text-lg mt-2 ${abyssinica.className}`}>{feature.content}</p>
+              <div key={index} className="flex flex-col items-center md:items-start text-center md:text-left p-2">
+                <img src={feature.icon} alt={feature.title} className="w-12 h-12 mb-2" />
+                <h2 className="text-lg md:text-xl mb-1 font-bold">{feature.title}</h2>
+                <p className="text-sm md:text-base">{feature.content}</p>
               </div>
             ))}
           </div>
         </div>
-        
-        {/* Mobile view */}
-        <div className="md:hidden flex flex-col items-center mt-10 space-y-4">
-          {featuresData.map((feature, index) => (
-            <div
-              key={index}
-              className={`relative text-white p-4 h-[12rem] w-[20rem] rounded-2xl`}
-              style={{
-                backgroundColor: (index === 0 || index === 3) ? "rgba(66, 102, 29, 0.2)" : "rgba(36, 203, 27, 0.2)", // Matching background color
-                border: (index === 0 || index === 3) ? "0.2rem solid #42661D" : "0.2rem solid #24CB1B", // Matching border
-              }}
-            >
-              <h2 className={`text-xl font-semibold ${alexandria.className}`}>{feature.title}</h2>
-              <p className={`text-sm mt-2 ${abyssinica.className}`}>{feature.content}</p>
-            </div>
-          ))}
-        </div>
       </div>
-    </>
+    </div>
   );
 }
