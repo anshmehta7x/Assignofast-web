@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Landing from "./components/landing";
-import What from "./components/What";
+import What from "./components/About";
 import Features from "./components/Features";
-import Why from "./components/Why";
+import Stats from "./components/Stats";
+import How from "./components/How";
+import Why from "./components/Focus";
 import Navbar from "./components/Navbar";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
@@ -14,6 +16,8 @@ export default function Home() {
       <Landing />
       <What />
       <Features />
+      <Stats/>
+      <How/>
       <Why/>
       <Faqs/>
       <Footer />
