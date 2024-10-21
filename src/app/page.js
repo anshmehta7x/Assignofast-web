@@ -7,7 +7,8 @@ import How from "./components/How";
 import Why from "./components/Focus";
 import Navbar from "./components/Navbar";
 import Faqs from "./components/Faqs";
-import Footer from "./components/Footer";
+import Banner from "./components/Banner";
+import FooterNew from "./components/FooterNew";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
       <How/>
       <Why/>
       <Faqs/>
-      <Footer />
+      <Banner />
+      <FooterNew/>
     </>
   );
 }

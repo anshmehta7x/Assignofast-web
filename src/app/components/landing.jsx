@@ -8,7 +8,7 @@ const alexandria = Alexandria({
 
 export default function Landing() {
   return (
-    <div className={`h-[100%] w-[100%] bg-[#01171C] lg:flex overflow-hidden relative font-alexandria ${alexandria.className}`}>
+    <div className={`h-[100%] w-[100%] bg-black lg:flex overflow-hidden relative font-alexandria ${alexandria.className}`}>
       <Image
         src="landing-overlay.svg"
         alt="Overlay Image"

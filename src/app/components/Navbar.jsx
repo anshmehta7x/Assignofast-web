@@ -17,7 +17,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className={`fixed flex items-center justify-between bg-transparent h-[8vh] md:h-[10vh] px-2 md:px-10 w-full z-[1000] ${alexandria.className} `}>
+        <nav className={`fixed flex items-center text-white justify-between bg-black h-[8vh] md:h-[10vh] px-2 md:px-10 w-full z-[1000] ${alexandria.className} `}>
             <div className="flex flex-row gap-4 items-center">
                 <Link href="/">
                     <Image
@@ -27,29 +27,36 @@ export default function Navbar() {
                         alt="ASSIGNOFAST Logo"
                     />
                 </Link>
-                <a href="/" className="text-[#BBFE03] inline">ASSIGNOFAST</a>
+                <a href="/" className=" inline">Assignofast</a>
             </div>
 
             {/* Centered Navigation Links */}
-            <ul className="hidden md:flex flex-grow justify-center items-center lg:gap-12 md:gap-6 text-white font-bold tracking-wider">
+            <ul className="hidden md:flex flex-grow justify-center items-center lg:gap-12 md:gap-6 text-white tracking-wider">
                 <Link href="/">
                     <li className="hover:underline">Home</li>
                 </Link>
-                <Link href="/product">
-                    <li className="hover:underline">Product</li>
+                <Link href="#features">
+                    <li className="hover:underline">Features</li>
                 </Link>
-                <Link href="/company">
-                    <li className="hover:underline">Company</li>
+                <Link href="/">
+                    <li className="hover:underline">FAQs</li>
+                </Link>
+                <Link href="/">
+                    <li className="hover:underline">Contact Us</li>
                 </Link>
             </ul>
 
-            <Image
+            {/* <Image
                         src="ieeecs-logo.svg"
                         width={172}
                         height={172}
                         alt="IEEE CS Logo"
                         className="hidden md:block"
-                    />
+                    /> */}
+
+                    <button className="button p-2 pl-4 pr-4 bg-[#B8F80C] text-black rounded hidden md:block">
+                        Get Started
+                    </button>
 
             <div className="flex gap-4 p-4 lg:px-4 md:p-0">
                 <button className="md:hidden block" onClick={toggleMenu}>
