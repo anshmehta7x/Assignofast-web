@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#01171C",
+        background: "black",
         borderGreen: "#358D08",
         lightGreen: "#BFEF4B",
         foreground: "var(--foreground)",

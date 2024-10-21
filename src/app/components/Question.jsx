@@ -17,7 +17,6 @@ export default function Question({ bgColor }) {
         className="absolute inset-0 rounded-lg"
         style={{ backgroundColor: bgColor, opacity: 0.5 }}
       />
-      
       <div className="relative text-white z-10">
         <h2 className={`text-xl md:text-2xl font-semibold ${alexandria.className}`}>QUESTION</h2>
         <p className="text-base md:text-xl">

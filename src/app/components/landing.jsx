@@ -8,42 +8,43 @@ const alexandria = Alexandria({
 
 export default function Landing() {
   return (
-    <div className={`h-[100%] w-[100%] bg-[#01171C] lg:flex overflow-hidden relative font-alexandria ${alexandria.className}`}>
-      <Image
-        src="landing-overlay.svg"
-        alt="Overlay Image"
-        className="absolute inset-0 w-full h-full object-cover opacity-70"
-        width={100}
-        height={100}
-      />
-      <div className="text-[3vh] lg:text-[8vh] relative z-10 w-[100vw] h-[38vh] lg:h-full lg:w-[45vw] mt-[10vh] lg:mt-[20vh] ml-[10vw] text-white">
-          <p>
-            Automate <span className="opacity-50">Tracking</span>
-          </p>
-          <p>
-            your DA's <span className="opacity-50">with</span>
-          </p>
-          <p className="text-[#B8F80C]">Assignofast</p>
-          <p className="w-[60%] lg:w-[70%] text-[1.5vh] lg:text-[2.5vh] mt-[3vh] lg:mt-[5vh]">
-            Assignofast - a smart companion designed to ease the stress of
-            keeping track of your tasks and assignments.
-          </p>
-          <button className="bg-[#b8f80c] mt-[3vh] lg:mt-[5vh] text-black p-2 lg:p-4 text-[1.5vh] lg:text-[3vh] ">
-            <span className="block lg:hidden ">Coming Very Soon !!</span>
-            <span className="hidden lg:block ">Coming Very Soon !!</span>
-            </button>
-        </div>
-      
-<div className="relative z-0 lg:flex h-[50vh] lg:h-[90vh] lg:w-[70vw] lg:mt-[10vh]">
-  <Image
-    src="landing-mobile.svg"
-    alt="Mobile Image"
-    layout="fill"
-    objectFit="contain"  
-    className="lg:absolute lg:inset-0"
-  />
+    <div className={`h-full w-full bg-black overflow-hidden font-alexandria ${alexandria.className}`}>
+      <div className="flex flex-col mt-[10vh] lg:mt-[20vh] text-[8vh] mx-[5vw] lg:text-[12vh]">
+        <p>WE ARE</p>
+        <p className="self-end text-right lg:self-start lg:text-left">IEEE-CS</p>
+        <p className="text-[0vh] lg:text-[12vh] lg:self-end lg:text-right text-center lg:-mt-[20vh]">Assignofast</p>
+        
+        <div className="flex flex-row items-center sm:mt-[-35vh]">
+          <p className="w-[28vw] text-[1vh] lg:text-[3vh]">
+            Assignofast is an app developed by IEEE-CS VIT Chapter to cater to students' necessity of managing their DA’s.
+            <button className="mt-6 py-2 flex items-center justify-start bg-[#89ef00] text-black px-2 w-[10vw]">
+            <img src="link-arrow-right.svg" alt="Arrow Right" className="h-4 w-4 mr-1" />
+            Download
+          </button></p>
+          <div className="w-full max-w-[30vw] mt-4">
+          <div className="w-[20vw] h-[20vw] absolute inset-0 m-auto bg-gradient-to-r from-[#08eb2a] to-transparent rounded-full blur-[8rem] opacity-80 z-0"></div>
+
+<Image 
+  src="/landing-tag.svg"
+  layout="responsive" 
+  width={500} 
+  height={300} 
+  className="rounded-lg z-1000" 
+  alt="Landing illustration"  
+/>
+
 </div>
 
+
+
+
+        <p className="w-1/3 text-[1vh] lg:text-[3vh] mt-[5vh]">
+          Ground-breaking app for your assignment needs.
+        </p>
+        </div>
+
+        
+      </div>
     </div>
   );
 }
