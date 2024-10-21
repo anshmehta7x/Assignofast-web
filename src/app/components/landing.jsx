@@ -14,10 +14,10 @@ export default function Landing() {
         <p className="self-end text-right lg:self-start lg:text-left">IEEE-CS</p>
         <p className="text-[0vh] lg:text-[8vh] lg:self-end lg:text-right text-center">Assignofast</p>
         
-        <div className="flex flex-row items-center mt-4">
-          <p className="w-1/3 text-[1vh] lg:text-[3vh]">
+        <div className="flex flex-row items-center sm:mt-[-20vh]">
+          <p className="w-[28vw] text-[1vh] lg:text-[3vh]">
             Assignofast is an app developed by IEEE-CS VIT Chapter to cater to students' necessity of managing their DA’s.
-            <button className="ml-4 flex items-center justify-start bg-[#89ef00] text-black px-2 w-[15vw]">
+            <button className="mt-6 py-2 flex items-center justify-start bg-[#89ef00] text-black px-2 w-[10vw]">
             <img src="link-arrow-right.svg" alt="Arrow Right" className="h-4 w-4 mr-1" />
             Download
           </button></p>
