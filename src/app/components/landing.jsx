@@ -22,18 +22,16 @@ export default function Landing() {
             Download
           </button></p>
           <div className="w-full max-w-[30vw] mt-4">
-          <div className="w-[20vw] h-[20vw] absolute inset-0 m-auto bg-gradient-to-r from-[#08eb2a] to-transparent rounded-full blur-[8rem] opacity-80 z-0"></div>
-
-<Image 
-  src="/landing-tag.svg"
-  layout="responsive" 
-  width={500} 
-  height={300} 
-  className="rounded-lg z-1000" 
-  alt="Landing illustration"  
-/>
-
-</div>
+          <div className="w-[20%] my-[8%] absolute ml-[40%] inset-0 bg-gradient-to-r from-[#08eb2a] to-transparent rounded-full blur-[8rem] opacity-80"></div>
+          <Image
+            src="/landing-tag.svg"
+            alt="how"
+            layout="responsive"
+            width={700} 
+            height={400} 
+            className="relative z-10"
+          />
+        </div>
 
 
 

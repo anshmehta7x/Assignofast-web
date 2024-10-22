@@ -13,8 +13,11 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen(prevValue => !prevValue);
+        console.log('Menu Open:', !isMenuOpen);
     };
+    
+    
 
     return (
         <nav className={`fixed flex items-center text-white justify-between bg-black h-[8vh] md:h-[10vh] px-2 md:px-10 w-full z-[1000] ${alexandria.className} `}>
@@ -58,24 +61,23 @@ export default function Navbar() {
                         Get Started
                     </button>
 
-            <div className="flex gap-4 p-4 lg:px-4 md:p-0">
+            {!isMenuOpen&&(<div className="flex gap-4 p-4 lg:px-4 md:p-0">
                 <button className="md:hidden block" onClick={toggleMenu}>
                     <Image
-                        src={isMenuOpen ? "cross-icon.svg" : "burger-menu.svg"}
+                        src="burger-menu.svg"
                         width={30}
                         height={30}
-                        alt={isMenuOpen ? "Close Menu" : "Open Menu"}
                     />
                 </button>
-            </div>
+            </div>)}
 
             {isMenuOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center font-bold z-[1001]">
                     <button className="absolute top-5 right-5" onClick={toggleMenu}>
                         <Image
                             src="cross-icon.svg"
-                            width={75}
-                            height={75}
+                            width={30}
+                            height={30}
                             alt="Close Menu"
                         />
                     </button>
@@ -85,11 +87,14 @@ export default function Navbar() {
                         <Link href="/">
                             <li className="hover:underline">Home</li>
                         </Link>
-                        <Link href="/product">
-                            <li className="hover:underline">Product</li>
+                        <Link href="/">
+                            <li className="hover:underline">Features</li>
                         </Link>
-                        <Link href="/company">
-                            <li className="hover:underline">Company</li>
+                        <Link href="/">
+                            <li className="hover:underline">FAQs</li>
+                        </Link>
+                        <Link href="/">
+                            <li className="hover:underline">Contact Us</li>
                         </Link>
                     </ul>
                 </div>
