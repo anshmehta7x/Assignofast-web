@@ -49,17 +49,13 @@ export default function Navbar() {
                 </Link>
             </ul>
 
-            {/* <Image
+             <Image
                         src="ieeecs-logo.svg"
                         width={172}
                         height={172}
                         alt="IEEE CS Logo"
                         className="hidden md:block"
-                    /> */}
-
-                    <button className="button p-2 pl-4 pr-4 bg-[#B8F80C] text-black rounded hidden md:block">
-                        Get Started
-                    </button>
+                    /> 
 
             {!isMenuOpen&&(<div className="flex gap-4 p-4 lg:px-4 md:p-0">
                 <button className="md:hidden block" onClick={toggleMenu}>

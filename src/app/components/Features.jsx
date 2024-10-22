@@ -13,16 +13,16 @@ const alexandria = Alexandria({
 });
 
 const featuresData = [
-  { icon: "./feat1.svg", title: "Real-Time Tracking", content: "Track your DA's progress in real-time." },
-  { icon: "./feat2.svg", title: "Customised Tasks", content: "Safe and seamless remainder options." },
-  { icon: "./feat3.svg", title: "Auto Sync with VTOP", content: "Choose your semester for your convenience." },
-  { icon: "./feat4.svg", title: "Auto Sync with VTOP", content: "Choose your semester for your convenience." }
+  { icon: "./icon-box.svg", title: "Single avenue", content: "All your deadlines at a single place, helping you stay organized and never miss important tasks." },
+  { icon: "./updated.svg", title: "Customised Tasks", content: "Safe and seamless remainder options." },
+  { icon: "./sync.svg", title: "Auto Sync", content: "All your assignments are automatically synced from your online portal, keeping everything organized and accessible." },
+  { icon: "./reminder.svg", title: "Personal reminders", content: "You can use the app to add personal tasks to refrain from forgetting your personal occupations" }
 ];
 
 export default function Features() {
   return (
-    <div className="bg-black h-auto p-4 font-sans">
-      <div className="flex h-full flex-col md:flex-row">
+    <div className="bg-black h-[100%] p-4 font-sans">
+      <div className="flex flex-col md:flex-row">
         <div className="flex justify-center items-center w-full md:w-1/2 mb-8 md:mb-0">
           <div className="relative w-full max-w-[300px] md:max-w-none">
             <img
@@ -43,7 +43,17 @@ export default function Features() {
             ))}
           </div>
         </div>
+        
       </div>
+      
+      <div className="flex items-center justify-center w-full lg:-mt-[20vh]">
+  <button className="bg-[#465254] w-[35vw] lg:w-[20vw] h-[10vh] rounded-full border-4 border-[#6da154] flex items-center justify-center">
+    <div className="bg-[#070707] w-[33vw] lg:w-[18vw] h-[7vh] rounded-full font-bold border-2 border-[#6da154] flex items-center justify-center">
+      USER GUIDE
+    </div>
+  </button>
+</div>
+
     </div>
   );
 }
