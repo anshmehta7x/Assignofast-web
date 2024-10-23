@@ -1,9 +1,49 @@
-export default function Stats() {
+"use client"
+import React, {useEffect,useState} from 'react';
+
+const CountUpAnimation = ({
+	iconComponent,
+	initialValue,
+	targetValue,
+	text,
+}) => {
+	const [count, setCount] = useState(initialValue);
+	const duration = 8000;
+
+	useEffect(() => {
+		let startValue = initialValue;
+		const interval = Math.floor(
+			duration / (targetValue - initialValue));
+
+		const counter = setInterval(() => {
+			startValue += 1;
+			setCount(startValue);
+			if (startValue >= targetValue) {
+				clearInterval(counter);
+			}
+		}, interval);
+
+		return () => {
+			clearInterval(counter);
+		};
+	}, [targetValue, initialValue]);
+
+	return (
+		<div className="container">
+			<div className="icon">{iconComponent}</div>
+			<span className="num">{count}</span>
+			<span className="text">{text}</span>
+		</div>
+	);
+};
+
+    export default function Stats() {
     const statsData = [
-        { value: "2.2k", label: "Followers" },
-        { value: "120+", label: "Projects" },
-        { value: "97+", label: "Awards" }
+        { initialValue:0, targetValue: 2200, label: "Followers", addn:"+" },
+        { initialValue:0,targetValue: 120, label: "Projects",addn:"+" },
+        { initialValue:0,targetValue: 97, label: "Awards", addn:"+" }
     ];
+
 
     return (
         <section className="bg-black text-white p-6 md:p-12">
@@ -16,16 +56,15 @@ export default function Stats() {
 
                 <div className="flex flex-wrap justify-center md:justify-end md:w-2/3">
                     {statsData.map((stat, index) => {
-                        const mainValue = stat.value.slice(0, -1);
-                        const lastChar = stat.value.slice(-1);
-
+                        
                         return (
                             <div key={index} className="p-4 m-2 text-center w-auto lg:mr-12 lg:ml-12">
-                                <h1 className="text-4xl md:text-5xl font-bold mb-2">
-                                    {mainValue}
-                                    <span className="text-[#89ef00]">{lastChar}</span>
-                                </h1>
-                                <p className="text-sm md:text-base">{stat.label}</p>
+                                <CountUpAnimation
+                                initialValue={stat.initialValue}
+                                targetValue={stat.targetValue}
+                                text={stat.addn}
+                                />
+                                <p>{stat.label}</p>
                             </div>
                         );
                     })}
