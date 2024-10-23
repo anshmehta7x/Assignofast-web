@@ -74,8 +74,8 @@ export default function Features() {
       </div>
 
       <div className="flex items-center justify-center w-full lg:mt-[5vh]">
-        <button className="bg-[#465254] w-[35vw] lg:w-[20vw] h-[10vh] rounded-full border-4 border-[#6da154] flex items-center justify-center">
-          <div className="bg-[#070707] w-[33vw] lg:w-[18vw] h-[7vh] rounded-full font-bold border-2 border-[#6da154] flex items-center justify-center">
+        <button className="bg-[#465254] w-[36vw] lg:w-[20vw] h-[9vh] rounded-full border-4 border-[#6da154] flex items-center justify-center">
+          <div className="bg-[#070707] w-[33vw] lg:w-[18vw] h-[6vh] rounded-full font-bold border-2 border-[#6da154] flex items-center justify-center">
             USER GUIDE
           </div>
         </button>

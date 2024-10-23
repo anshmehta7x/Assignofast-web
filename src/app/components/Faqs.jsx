@@ -23,9 +23,9 @@ export default function Faqs() {
       >
         Frequently Asked Questions
       </h1>
-      <div className="m-4">
+      <div className="m-4 ">
         {[0, 1, 2].map((row) => (
-          <div key={row} className="flex flex-col md:flex-row md:space-x-4">
+          <div key={row} className="flex flex-col justify-center md:flex-row md:space-x-4">
             {colors.map((color, col) => {
               const isMobile = row % 2 === 0;
               return (
