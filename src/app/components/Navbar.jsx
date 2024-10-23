@@ -24,9 +24,9 @@ export default function Navbar() {
       <div className="flex flex-row gap-4 items-center">
         <Link href="/">
           <Image
-            src="assignofast-logo.svg"
-            width={36}
-            height={36}
+            src="/assignofast-logo.png"
+            width={60}
+            height={60}
             alt="ASSIGNOFAST Logo"
           />
         </Link>
