@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed flex items-center text-white justify-between bg-black h-[8vh] md:h-[10vh] px-2 md:px-10 w-full z-[1000] ${alexandria.className} `}
+      className={`fixed flex items-center text-white justify-between bg-black h-[8vh] md:h-[10vh] px-2 md:px-10 w-[100%] z-[1000] overflow-hidden ${alexandria.className} `}
     >
       <div className="flex flex-row gap-4 items-center">
         <Link href="/">
