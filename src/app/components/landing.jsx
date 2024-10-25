@@ -60,7 +60,7 @@ export default function Landing() {
           </div>
 
           {/* Landing Tag */}
-          <div className="absolute -mt-[98vh] ml-[10%] w-[90vw] h-[60vh] lg:w-[40vw] lg:h-[85vh] lg:ml-[30%] lg:-mt-[20%]">
+          <div className="absolute -mt-[98vh] ml-[10%] w-[90vw] h-[60vh] lg:w-[43vw] lg:h-[91vh] lg:ml-[30%] lg:-mt-[20%]">
   <div className="absolute inset-0  z-0 lg:ml-[15%] w-[100%] lg:w-[90%] lg:h-[80%] mx-auto my-auto bg-gradient-to-r from-[#08eb2a] to-transparent rounded-full blur-3xl opacity-80"></div>
   <div className="relative w-full h-full">
   <div className="lg:hidden">
