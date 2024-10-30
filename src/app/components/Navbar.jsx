@@ -40,10 +40,10 @@ export default function Navbar() {
         <Link href="/">
           <li className="hover:underline">Home</li>
         </Link>
-        <Link href="#features">
+        <Link href="/#features">
           <li className="hover:underline">Features</li>
         </Link>
-        <Link href="#faq">
+        <Link href="/#faq">
           <li className="hover:underline">FAQs</li>
         </Link>
         <Link href="/">

@@ -2,6 +2,7 @@ import { Alexandria } from "next/font/google";
 import Footer from "../components/FooterNew";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 const alexandria = Alexandria({
   weight: "400",
@@ -32,7 +33,7 @@ export default function Guide() {
       number: 4,
       title: "Choose semester and submit",
       description:
-        "Choose the semester you want to get data from and submit. Unless you manually change it, the same semester DA will be auto-scraped with every login.",
+        "Choose the semester you want to get data from and submit. Unless you manually change it, the same semester DA will be automatically synced with every login.",
     },
   ];
 
@@ -101,9 +102,12 @@ export default function Guide() {
               </div>
 
               <div className="mt-12">
-                <button className="bg-[#144c11] hover:bg-[#1a5e15] transition-colors duration-200 px-6 py-3 rounded-lg text-white font-semibold">
-                  Back to Sign In
-                </button>
+                <Link
+                  href="chrome-extension://oenbdnejpfjgonicapclmcnhiglacaem/signin.html"
+                  className="bg-[#144c11] hover:bg-[#1a5e15] transition-colors duration-200 px-6 py-3 rounded-lg text-white font-semibold"
+                >
+                  Back to Extension
+                </Link>
               </div>
             </div>
           </div>
