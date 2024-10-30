@@ -1,26 +1,33 @@
 import { Abyssinica_SIL, Alexandria } from "next/font/google";
 
 const abyssinica = Abyssinica_SIL({
-  weight: '400',
-  subsets: ['latin'],
+  weight: "400",
+  subsets: ["latin"],
 });
 
 const alexandria = Alexandria({
-  weight: '400',
-  subsets: ['latin'],
+  weight: "400",
+  subsets: ["latin"],
 });
 
-export default function Question({ bgColor }) {
+export default function Question({ bgColor, question, answer }) {
   return (
-    <div className={`relative h-auto md:h-[12rem] w-full md:w-[42rem] m-2 p-4 rounded-lg ${abyssinica.className}`}>
+    <div
+      className={`relative w-full md:w-[42rem] m-4 p-6 rounded-xl shadow-lg ${abyssinica.className}`}
+      style={{ minHeight: "fit-content" }}
+    >
       <div
-        className="absolute inset-0 rounded-lg"
-        style={{ backgroundColor: bgColor, opacity: 0.5 }}
+        className="absolute inset-0 rounded-xl"
+        style={{ backgroundColor: bgColor, opacity: 0.4 }}
       />
-      <div className="relative text-white z-10">
-        <h2 className={`text-xl md:text-2xl font-semibold ${alexandria.className}`}>QUESTION</h2>
-        <p className="text-base md:text-xl">
-          Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.
+      <div className="relative text-white z-10 space-y-4">
+        <h2
+          className={`text-xl md:text-2xl font-semibold leading-relaxed ${alexandria.className}`}
+        >
+          {question}
+        </h2>
+        <p className="text-base md:text-lg leading-relaxed opacity-90">
+          {answer}
         </p>
       </div>
     </div>
