@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import { useCallback } from 'react';import Image from "next/image";
 import { Alexandria } from "next/font/google";
 
 const alexandria = Alexandria({
@@ -7,6 +9,15 @@ const alexandria = Alexandria({
 });
 
 export default function Landing() {
+  const handleApp = useCallback(() => {
+    window.open('https://apps.apple.com/in/app/assignofast/id6736854512', '_blank');
+  }, []);
+  const handlePlay = useCallback(() => {
+    window.open('https://play.google.com/store/apps/details?id=com.aryanjain.assignofast', '_blank');
+  }, []);
+  const handleChrome = useCallback(() => {
+    window.open('https://chromewebstore.google.com/detail/assignofast/oenbdnejpfjgonicapclmcnhiglacaem', '_blank');
+  }, []);
   return (
     <div
       className={`h-[115vh] lg:h-[105vh] w-[100%] overflow-hidden bg-black font-alexandria ${alexandria.className}`}
@@ -26,14 +37,8 @@ export default function Landing() {
         <div className="flex flex-row items-center justify-between mt-[35vh] lg:mt-[10vh]">
           {/* Buttons */}
           <div className="flex flex-col items-center gap-6 ml-[10vw] lg:ml-[5vw] w-[80vw] lg:w-[25vw]">
-            <button className="h-[10vh] w-full bg-[#144c11] flex items-center gap-4 p-4">
-              <Image
-                src="/chrome-web.svg"
-                width={45}
-                height={45}
-                alt="Chrome Icon"
-                className="h-full"
-              />
+            <button onClick={handleChrome} className="h-[10vh] w-full bg-[#144c11] flex items-center gap-4 p-4">
+              <Image src="/chrome-web.svg" width={45} height={45} alt="Chrome Icon" className="h-full" />
               <div className="flex flex-col justify-center text-left">
                 <span className="text-[1.5vh] lg:text-[2vh]">
                   Available in the
@@ -45,14 +50,14 @@ export default function Landing() {
             </button>
 
             <div className="flex flex-row gap-4 w-full">
-              <button className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4">
-                <Image
-                  src="/apple.svg"
-                  alt="Apple Icon"
-                  width={45}
-                  height={45}
-                  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
-                />
+              <button onClick={handleApp} className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4">
+              <Image
+  src="/apple.svg"
+  alt="Apple Icon"
+  width={45}
+  height={45}
+  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
+/>
 
                 <div className="flex flex-col justify-center text-left">
                   <span className="text-[1vh] lg:text-[1.5vh]">
@@ -64,15 +69,15 @@ export default function Landing() {
                 </div>
               </button>
 
-              <button className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4">
-                <Image
-                  src="/google-play.svg"
-                  alt="Play Icon"
-                  width={45}
-                  height={45}
-                  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
-                />
-                <div className="flex flex-col justify-center text-left">
+              <button onClick={handlePlay} className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4">
+              <Image
+  src="/google-play.svg"
+  alt="Play Icon"
+  width={45}
+  height={45}
+  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
+/>
+<div className="flex flex-col justify-center text-left">
                   <span className="text-[1vh] lg:text-[1.5vh]">Get it on</span>
                   <span className="text-[1.5vh] lg:text-[2vh] font-bold">
                     Google Play
