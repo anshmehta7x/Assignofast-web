@@ -20,15 +20,15 @@ export default function Landing() {
   }, []);
   return (
     <div
-      className={`h-[115vh] lg:h-[105vh] w-[100%] overflow-hidden bg-black font-alexandria ${alexandria.className}`}
+      className={`h-[115vh] lg:h-[95vh] w-[100%] overflow-hidden bg-black font-alexandria ${alexandria.className}`}
     >
-      <div className="flex flex-col relative mt-[10vh] lg:mt-[30vh] text-[8vh] lg:text-[12vh]">
-        <p className="px-[5vw]">WE ARE</p>
-        <p className="px-[5vw] self-end text-right lg:self-start lg:text-left lg:text-[10vh]">
+      <div className="flex flex-col relative mt-[10vh] lg:mt-[30vh] text-[6vh]">
+        <p className="px-[5vw]">We are</p>
+        <p className="px-[5vw] self-end text-right lg:self-start lg:text-left lg:text-[8vh]">
           IEEE-CS
         </p>
-        <p className="text-[0vh] lg:text-[10vh] mr-[5vw] lg:self-end lg:text-right text-center -mt-[30vh]">
-          Assignofast
+        <p className="text-[0vh] lg:text-[11vh] mr-[5vw] lg:self-end lg:text-right text-center -mt-[30vh]">
+          ASSIGNOFAST
         </p>
         <p className="w-1/3 z-10 lg:w-1/4 ml-2 text-left text-[1.2vh] lg:mr-[5vw] mt-[43vh] lg:mt-[0vh] lg:text-[2.5vh] lg:self-end lg:text-right">
           Your personal shield against deadline dread - Assignofast keeps you
@@ -40,10 +40,10 @@ export default function Landing() {
             <button onClick={handleChrome} className="h-[10vh] w-full bg-[#144c11] flex items-center gap-4 p-4">
               <Image src="/chrome-web.svg" width={45} height={45} alt="Chrome Icon" className="h-full" />
               <div className="flex flex-col justify-center text-left">
-                <span className="text-[1.5vh] lg:text-[2vh]">
+                <span className="text-[1.5vh]">
                   Available in the
                 </span>
-                <span className="text-[2.3vh] lg:text-[3vh] font-bold">
+                <span className="text-[2.3vh] font-bold">
                   Chrome Web Store
                 </span>
               </div>
@@ -111,8 +111,8 @@ export default function Landing() {
           </div>
         </div>
 
-        <p className="text-[5vh] z-10 lg:text-[0vh] -mt-[45vh] text-center lg:mt-0 ">
-          Assignofast
+        <p className="text-[6vh] z-10 lg:text-[0vh] -mt-[45vh] text-center lg:mt-0 ">
+          ASSIGNOFAST
         </p>
         <p className="text-[2vh] z-10 mt-[2vh] px-[5vw] text-center lg:text-[0vh]">
           Assignofast is an app developed by IEEE-CS VIT Chapter to cater to

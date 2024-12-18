@@ -49,7 +49,7 @@ export default function Faqs() {
   return (
     <div
       id="faq"
-      className={`bg-black h-auto text-white p-4 ${abyssinica.className}`}
+      className={`bg-black h-auto text-white p-4 pt-[10vh] ${abyssinica.className}`}
     >
       <h1
         className={`text-3xl md:text-5xl m-4 text-center font-semibold ml-6 ${alexandria.className}`}

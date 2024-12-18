@@ -14,16 +14,16 @@ const alexandria = Noto_Sans_Georgian({
 export default function What() {
   return (
     <section className="bg-black text-white">
-      <h1 className="text-3xl md:text-5xl font-bold text-center mb-8">Focus on What Matters</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 mt-0">Focus on What Matters</h1>
 
       <div className="flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2 mb-8 md:mb-0 order-1 md:order-2"> {/* Image div */}
           <Image
             src="./focus.svg"
             alt="focus"
-            height={800}
-            width={800}
-            className="w-full max-h-[30rem] md:max-h-full" // Ensuring the image is responsive
+            height={500}
+            width={500}
+            className="w-full max-h-[30rem]"
           />
         </div>
 

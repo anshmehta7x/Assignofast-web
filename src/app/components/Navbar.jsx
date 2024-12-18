@@ -35,7 +35,6 @@ export default function Navbar() {
         </a>
       </div>
 
-      {/* Centered Navigation Links */}
       <ul className="hidden md:flex flex-grow justify-center items-center lg:gap-12 md:gap-6 text-white tracking-wider">
         <Link href="/">
           <li className="hover:underline">Home</li>
@@ -46,15 +45,15 @@ export default function Navbar() {
         <Link href="/#faq">
           <li className="hover:underline">FAQs</li>
         </Link>
-        <Link href="/">
-          <li className="hover:underline">Contact Us</li>
+        <Link href="/#how">
+          <li className="hover:underline">How To Use</li>
         </Link>
       </ul>
 
       <Image
         src="ieeecs-logo.svg"
-        width={172}
-        height={172}
+        width={86}
+        height={86}
         alt="IEEE CS Logo"
         className="hidden md:block"
       />
@@ -68,7 +67,7 @@ export default function Navbar() {
       )}
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center font-bold z-[1001]">
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center font-bold z-[1001]">
           <button className="absolute top-5 right-5" onClick={toggleMenu}>
             <Image
               src="cross-icon.svg"
@@ -89,8 +88,8 @@ export default function Navbar() {
             <Link href="#faq">
               <li className="hover:underline">FAQs</li>
             </Link>
-            <Link href="/">
-              <li className="hover:underline">Contact Us</li>
+            <Link href="/#how">
+              <li className="hover:underline">How To Use</li>
             </Link>
           </ul>
         </div>
