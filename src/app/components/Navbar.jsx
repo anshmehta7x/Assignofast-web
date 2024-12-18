@@ -80,16 +80,16 @@ export default function Navbar() {
           {/* Menu Items */}
           <ul className="flex flex-col gap-8 mt-12">
             <Link href="/">
-              <li className="hover:underline">Home</li>
+              <li className="hover:underline" onClick={toggleMenu}>Home</li>
             </Link>
             <Link href="#features">
-              <li className="hover:underline">Features</li>
+              <li className="hover:underline" onClick={toggleMenu}>Features</li>
             </Link>
             <Link href="#faq">
-              <li className="hover:underline">FAQs</li>
+              <li className="hover:underline" onClick={toggleMenu}>FAQs</li>
             </Link>
             <Link href="/#how">
-              <li className="hover:underline">How To Use</li>
+              <li className="hover:underline" onClick={toggleMenu}>How To Use</li>
             </Link>
           </ul>
         </div>

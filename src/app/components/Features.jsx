@@ -41,7 +41,7 @@ const featuresData = [
 
 export default function Features() {
   return (
-    <div className="bg-black h-[100%] p-4 font-sans lg:pt-[20vh]" id="features">
+    <div className="bg-black h-[100%] p-4 font-sans pt-[10vh] lg:pt-[20vh]" id="features">
       <div className="flex flex-col md:flex-row">
         <div className="flex justify-center items-center w-full md:w-1/2 mb-8 md:mb-0">
           <div className="relative w-full max-w-[300px] md:max-w-none">
