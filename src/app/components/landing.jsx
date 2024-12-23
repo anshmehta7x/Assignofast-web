@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback } from 'react';import Image from "next/image";
+import { useCallback } from "react";
+import Image from "next/image";
 import { Alexandria } from "next/font/google";
 
 const alexandria = Alexandria({
@@ -10,13 +11,22 @@ const alexandria = Alexandria({
 
 export default function Landing() {
   const handleApp = useCallback(() => {
-    window.open('https://apps.apple.com/in/app/assignofast/id6736854512', '_blank');
+    window.open(
+      "https://apps.apple.com/in/app/assignofast/id6736854512",
+      "_blank"
+    );
   }, []);
   const handlePlay = useCallback(() => {
-    window.open('https://play.google.com/store/apps/details?id=com.aryanjain.assignofast', '_blank');
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.aryanjain.assignofast",
+      "_blank"
+    );
   }, []);
   const handleChrome = useCallback(() => {
-    window.open('https://chromewebstore.google.com/detail/assignofast/oenbdnejpfjgonicapclmcnhiglacaem', '_blank');
+    window.open(
+      "https://chromewebstore.google.com/detail/assignofast/oenbdnejpfjgonicapclmcnhiglacaem",
+      "_blank"
+    );
   }, []);
   return (
     <div
@@ -24,10 +34,10 @@ export default function Landing() {
     >
       <div className="flex flex-col relative mt-[10vh] lg:mt-[30vh] text-[6vh]">
         <p className="px-[5vw]">We are</p>
-        <p className="px-[5vw] self-end text-right lg:self-start lg:text-left lg:text-[8vh]">
+        <p className="px-[5vw] self-end text-right lg:self-start lg:text-left lg:text-[8vh] ">
           IEEE-CS
         </p>
-        <p className="text-[0vh] lg:text-[11vh] mr-[5vw] lg:self-end lg:text-right text-center -mt-[30vh]">
+        <p className="text-[0vh] lg:text-[10vh] mr-[5vw] lg:self-end lg:text-right text-center -mt-[30vh]">
           ASSIGNOFAST
         </p>
         <p className="w-1/3 z-10 lg:w-1/4 ml-2 text-left text-[1.2vh] lg:mr-[5vw] mt-[43vh] lg:mt-[0vh] lg:text-[2.5vh] lg:self-end lg:text-right">
@@ -38,27 +48,35 @@ export default function Landing() {
         <div className="flex flex-row items-center justify-between mt-[35vh] lg:mt-[20vh]">
           {/* Buttons */}
           <div className="flex flex-col items-center gap-6 mt-[25vh] lg:mt-0 ml-[10vw] lg:ml-[5vw] w-[80vw] lg:w-[25vw]">
-            <button onClick={handleChrome} className="h-[10vh] w-full bg-[#144c11] flex items-center gap-4 p-4">
-              <Image src="/chrome-web.svg" width={45} height={45} alt="Chrome Icon" className="h-full" />
+            <button
+              onClick={handleChrome}
+              className="h-[10vh] w-full bg-[#144c11] flex items-center gap-4 p-4"
+            >
+              <Image
+                src="/chrome-web.svg"
+                width={45}
+                height={45}
+                alt="Chrome Icon"
+                className="h-full"
+              />
               <div className="flex flex-col justify-center text-left">
-                <span className="text-[1.5vh]">
-                  Available in the
-                </span>
-                <span className="text-[2.3vh] font-bold">
-                  Chrome Web Store
-                </span>
+                <span className="text-[1.5vh]">Available in the</span>
+                <span className="text-[2.3vh] font-bold">Chrome Web Store</span>
               </div>
             </button>
 
-            <div className="flex flex-row gap-4 w-full">
-              <button onClick={handleApp} className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4">
-              <Image
-  src="/apple.svg"
-  alt="Apple Icon"
-  width={45}
-  height={45}
-  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
-/>
+            <div className="flex flex-row w-full gap-4">
+              <button
+                onClick={handleApp}
+                className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4"
+              >
+                <Image
+                  src="/apple.svg"
+                  alt="Apple Icon"
+                  width={45}
+                  height={45}
+                  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
+                />
 
                 <div className="flex flex-col justify-center text-left">
                   <span className="text-[1vh] lg:text-[1.5vh]">
@@ -70,15 +88,18 @@ export default function Landing() {
                 </div>
               </button>
 
-              <button onClick={handlePlay} className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4">
-              <Image
-  src="/google-play.svg"
-  alt="Play Icon"
-  width={45}
-  height={45}
-  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
-/>
-<div className="flex flex-col justify-center text-left">
+              <button
+                onClick={handlePlay}
+                className="h-[10vh] w-[50%] bg-[#144c11] flex items-center gap-4 p-4"
+              >
+                <Image
+                  src="/google-play.svg"
+                  alt="Play Icon"
+                  width={45}
+                  height={45}
+                  className="w-[30px] h-[30px] lg:w-[45px] lg:h-[45px]"
+                />
+                <div className="flex flex-col justify-center text-left">
                   <span className="text-[1vh] lg:text-[1.5vh]">Get it on</span>
                   <span className="text-[1.5vh] lg:text-[2vh] font-bold">
                     Google Play
@@ -104,7 +125,6 @@ export default function Landing() {
                 <img
                   src="/landing-tag.svg"
                   className="w-[17vw] h-[50vh] lg:h-[70vh] object-contain mt-[20vh]"
-                  
                 />
               </div>
             </div>
