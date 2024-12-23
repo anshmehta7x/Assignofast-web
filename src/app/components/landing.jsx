@@ -40,7 +40,7 @@ export default function Landing() {
         <p className="text-[0vh] lg:text-[10vh] mr-[5vw] lg:self-end lg:text-right text-center -mt-[30vh]">
           ASSIGNOFAST
         </p>
-        <p className="w-1/3 z-10 lg:w-1/4 ml-2 text-left text-[1.2vh] lg:mr-[5vw] mt-[43vh] lg:mt-[0vh] lg:text-[2.5vh] lg:self-end lg:text-right">
+        <p className="w-1/3 z-10 lg:w-1/4 ml-2 text-left sm:text-[1.2vh] lg:mr-[5vw] mt-[43vh] lg:mt-[0vh] lg:text-[2.5vh] lg:self-end lg:text-right text-[0]">
           Your personal shield against deadline dread - Assignofast keeps you
           always ahead
         </p>
