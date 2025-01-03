@@ -5,7 +5,7 @@ import Icon from "./Icon";
 export default function Footer() {
   return (
     <>
-      <footer className="flex flex-col items-center justify-center gap-6 px-8 text-white bg-black py-0pb-0 md:flex-row md:justify-between">
+      <footer className="flex flex-col items-center justify-center gap-6 p-8 text-white bg-black py-0pb-0 md:flex-row md:justify-between">
         <div>
           <p>© 2024 Assignofast. All Rights Reserved.</p>
         </div>
