@@ -62,10 +62,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2">
-          <img src="footer.svg" alt="Footer Graphic" className="hidden lg:block h-[80vh]" />
-          <img src="footer-mobile.svg" alt="Footer Graphic" className="block lg:hidden px-8 h-[35vh]" />
-        </div>
+        <div className="lg:w-1/2 flex justify-center items-center">
+  <img src="footer.svg" alt="Footer Graphic" className="hidden lg:block h-[80vh]" />
+  <img src="footer-mobile.svg" alt="Footer Graphic" className="block lg:hidden px-8 h-[35vh]" />
+</div>
+
       </div>
     </div>
     
