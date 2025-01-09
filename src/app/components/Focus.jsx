@@ -36,9 +36,9 @@ export default function What() {
           </div>
 
           <div className="border-l-4 border-[#89ef00] p-4 mb-8">
-            <h2 className="text-lg md:text-xl font-semibold">Assignments Sync</h2>
+            <h2 className="text-lg md:text-xl font-semibold">Assignments and Timetable Sync</h2>
             <p className="text-sm md:text-base">
-            Your assignments will automatically sync, ensuring you always have the latest information. While synced tasks cannot be deleted, you can add personalized notes, such as specifying whether an assignment needs to be submitted online or offline.
+            Your assignments and time table will automatically sync, ensuring you always have the latest information. While synced tasks cannot be deleted, you can add personalized notes, such as specifying whether an assignment needs to be submitted online or offline.
             </p>
           </div>
 

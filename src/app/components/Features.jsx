@@ -23,13 +23,13 @@ const featuresData = [
   {
     icon: "./updated.svg",
     title: "Customised Tasks",
-    content: "Safe and seamless remainder options.",
+    content: "Safe and seamless reminder options.",
   },
   {
     icon: "./sync.svg",
     title: "Auto Sync",
     content:
-      "All your assignments are automatically synced from your online portal, keeping everything organized and accessible.",
+      "All your assignments and timetable are automatically synced from your online portal, keeping everything organized and accessible.",
   },
   {
     icon: "./reminder.svg",

@@ -48,9 +48,6 @@ export default function Guide() {
             <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-3/4 h-96 bg-gradient-to-r from-[#08eb2a] to-transparent rounded-full blur-3xl opacity-20"></div>
 
             <div className="relative">
-              <h1 className="mb-4 text-4xl font-bold md:text-5xl">
-                Assignofast Documentation
-              </h1>
               <h2 className="mb-12 text-2xl font-semibold md:text-3xl">
                 Step by Step Guide
               </h2>
