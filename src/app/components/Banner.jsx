@@ -35,7 +35,7 @@ export default function Footer() {
             Unlock your potential with our app - track tasks, manage DAs, and stay organized with just a tap. Download now and take control, wherever life takes you!
           </p>
           <div className="flex flex-col my-[5vh] items-center gap-6 w-[80vw] lg:w-[30vw]">
-            <button onClick={handleChrome} className="h-[10vh] w-full bg-black flex items-center gap-4 p-4">
+            <button onClick={handleChrome} className="h-[10vh] w-full bg-[#144c11] flex items-center gap-4 p-4">
               <Image src="/chrome-web.svg" width={45} height={45} alt="Chrome Icon" className="h-full" />
               <div className="flex flex-col justify-center text-left">
                 <span className="text-[1.8vh] lg:text-[2vh]">Available in the</span>
