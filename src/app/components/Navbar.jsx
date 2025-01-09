@@ -48,6 +48,10 @@ export default function Navbar() {
         <Link href="/#how">
           <li className="hover:underline">How To Use</li>
         </Link>
+        <a href="mailto:tech.ieecsvit@gmail.com">
+    <li className="hover:underline">Contact Us</li>
+</a>
+
       </ul>
 
       <Image
@@ -91,6 +95,10 @@ export default function Navbar() {
             <Link href="/#how">
               <li className="hover:underline" onClick={toggleMenu}>How To Use</li>
             </Link>
+            <a href="mailto:tech.ieecsvit@gmail.com">
+    <li className="hover:underline" onClick={toggleMenu}>Contact Us</li>
+</a>
+
           </ul>
         </div>
       )}
